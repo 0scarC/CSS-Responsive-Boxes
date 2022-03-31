@@ -11,25 +11,28 @@ body {
 .a {
   background-color: #F00A;
   width: 100%;
-  min-height: 10em;
+  min-height: 6em;
   margin: 0.5em;
 }
 
 .b {
   background-color: #0F0A;
   width:100%;
-  min-height: 10em;
+  min-height: 25em;
   margin: 0.5em;
 }
 
 .c {
   background-color: #00FA;
   width: 100%;
-  min-height: 10em;
+  min-height: 6em;
   margin: 0.5em;
 }
 
 @media (min-width:600px) {
+  .a{
+    min-height: 12em;
+  }
   .b {
     width: 70%;
   }

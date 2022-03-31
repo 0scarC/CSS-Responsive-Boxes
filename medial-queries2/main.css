@@ -10,15 +10,20 @@ body {
   justify-content: space-between;
 }
 .container div {
-  min-height: 3em;
   margin: 0.1em;
   text-align: center;
 }
 .a,
-.b,
 .f {
   background-color: #00F9;
   width: 100%;
+  min-height: 1.25em;
+}
+
+.b {
+  background-color: #00F9;
+  width: 100%;
+  min-height: 3.5em;
 }
 
 .c,
@@ -26,37 +31,40 @@ body {
 .e {
   background-color: #0F09;
   width: 30%;
+  min-height: 1.25em;
 }
 
 @media (min-width: 650px) {
+  .a {
+    min-height: 2em;
+  }
   .b {
-    order: 1;
-    height: 3em;
+    height: 0;
     width: 66%;
   }
-  .f { 
-    order: 2;
-    height: 6.22em;
-    width: 28%;
-  }
   .c {
-    order: 3;
+    order: 1;
+    min-height: 1.8em;
     width: 20%;
     position: relative;
-    top: -3.2em;
+    top: -2em;
   }
   .d {
-    order: 3;
+    order: 1;
     width: 20%;
     position: relative;
-    top: -3.2em;
-    left: -16.25%;
+    top: -2em;
+    left: -15.8%;
   }
   .e {
-    order: 3;
+    order: 1;
     width: 20%;
     position: relative;
-    top: -3.2em;
-    left: -32.5%;
+    top: -2em;
+    left: -31.6%;
+  }
+  .f { 
+    height: 5.5em;
+    width: 28%;
   }
 }
