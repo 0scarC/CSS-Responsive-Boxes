@@ -1,3 +1,62 @@
 body {
-  background: papayawhip;
+  background: #ffefd5;
+  color: #fff;
+  font-size: 5em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container div {
+  min-height: 3em;
+  margin: 0.1em;
+  text-align: center;
+}
+.a,
+.b,
+.f {
+  background-color: #00F9;
+  width: 100%;
+}
+
+.c,
+.d,
+.e {
+  background-color: #0F09;
+  width: 30%;
+}
+
+@media (min-width: 650px) {
+  .b {
+    order: 1;
+    height: 3em;
+    width: 66%;
+  }
+  .f { 
+    order: 2;
+    height: 6.22em;
+    width: 28%;
+  }
+  .c {
+    order: 3;
+    width: 20%;
+    position: relative;
+    top: -3.2em;
+  }
+  .d {
+    order: 3;
+    width: 20%;
+    position: relative;
+    top: -3.2em;
+    left: -16.25%;
+  }
+  .e {
+    order: 3;
+    width: 20%;
+    position: relative;
+    top: -3.2em;
+    left: -32.5%;
+  }
 }
